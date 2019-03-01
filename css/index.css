@@ -1,0 +1,442 @@
+.section1{
+
+    background: url(../images/01/products.png) no-repeat center center,
+                url(../images/01/bg.png) no-repeat center bottom;
+}
+
+
+.section1 .sofa{
+
+    position: absolute;
+
+    left:50%;
+    margin-left: -160px;
+
+    bottom:0;
+    margin-bottom: 360px;
+
+    animation: shake 1.2s infinite alternate;
+}
+
+.section1 .ball{
+
+    position: absolute;
+    left:50%;
+    margin-left: 120px;
+
+    bottom: 0;
+    margin-bottom: 480px;
+
+    animation: shake 2.4s infinite alternate;
+}
+
+@keyframes shake{
+
+    from{}
+    to{
+        transform: translateY(-40px);
+    }
+}
+
+
+/* 第二屏开始 */
+.section2{
+    background: url(../images/02/bg.png) no-repeat center bottom;
+}
+
+.section2 .sofas{
+
+    position: absolute;
+    /* left:50%;
+    margin-left: -220.5px; */
+
+    /* 根据动画效果考虑，这里用right */
+    right:50%;
+    margin-right: -220.5px;
+    
+    width: 0;
+    bottom: 0;
+    margin-bottom: 210px;
+}
+
+
+.section2 .search{
+
+    position: absolute;
+    right:20px;
+
+    bottom: 0;
+    margin-bottom: 280px;
+}
+
+
+/* 第三屏开始 */
+.section3{
+    background: url(../images/03/bg.png) no-repeat center;
+}
+
+
+.section3 .sofa{
+
+    position: absolute;
+    left:50%;
+    top:50%;
+
+    margin-left: -235px;
+    margin-top: -130px;
+}
+
+.section3 .color{
+
+    width: 296px;
+    height: 131px;
+    background: url(../images/03/color01.gif) no-repeat;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 38px;
+    margin-top: -30px;
+}
+
+.section3 .add{
+
+    width: 218px;
+    height: 58px;
+    background: url(../images/03/add01.gif) no-repeat;
+
+    position: absolute;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 38px;
+    margin-top: 100px;
+}
+
+
+.section3.animation .color{
+
+    transition: all 1s;
+    background: url(../images/03/color02.gif) no-repeat;
+}
+
+.section3.animation .add{
+
+    transition: all 1s;
+    background: url(../images/03/add02.gif) no-repeat;
+}
+
+
+/* 第四屏 */
+.section4{
+    background: url(../images/04/bg.png) no-repeat center bottom;
+}
+
+.section4 .cloud{
+
+    position: absolute;
+    top:0;
+    right:0;
+    animation: cloud 50s infinite;
+}
+
+
+@keyframes cloud{
+
+    from{}
+    to{
+        transform:translateX(-1500px);
+    }
+}
+
+.section4>div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section4 .keyboard{
+    margin-top: 50px;
+    width: 283px;
+    height: 270px;
+    background: url(../images/04/keyboard.png);
+    position: relative;
+
+    opacity: 0;
+}
+
+.section4 .address{
+    position: absolute;
+    left:50%;
+    margin-left: -86.5px;
+    top:60px;
+}
+
+
+.section4 .carBox{
+    width: 407px;
+    height: 346px;
+    position: absolute;
+    left:50%;
+    margin-left: -203.5px;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.section4 .sofa{
+    position: absolute;
+    left:130px;
+    top:-40px;
+}
+
+.section .car{
+
+    position: absolute;
+}
+
+
+/* 第五屏 */
+.section5{
+    perspective: 600px;
+    background: url(../images/05/bg.png) repeat;
+}
+
+
+.section5 .cardBox{
+
+    width: 358px;
+    height: 221px;
+    position: absolute;
+
+    left:50%;
+    margin-left: -460px;
+    top:50%;
+    margin-top: -90px;
+}
+
+.section5 .bill{
+
+    position: absolute;
+    left:135px;
+}
+
+.section5 .card{
+    position: absolute;
+}
+
+.section5 .mouse{
+
+    width: 205px;
+    height: 400px;
+    background: url(../images/05/mouse01.png) no-repeat left bottom;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 180px;
+    margin-top: -300px;
+}
+
+
+.section5 .hand{
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: 150px;
+    margin-top: 0px;
+}
+
+
+.section5 .words{
+    position: absolute;
+    left:50%;
+    margin-left: -270.5px;
+    top:35px;
+
+    /* display: none; */
+    opacity: 0;
+}
+
+
+.section5.animation .hand{
+
+    transition: all 1s;
+    transform: translateY(-50px);
+}
+
+.section5.animation .mouse{
+
+    transition: all 1s 1s;
+    background-image: url(../images/05/mouse02.png);
+}
+
+.section5.animation .bill{
+
+    transition: all 1s 2s;
+    transform: translateY(-130px);
+}
+
+.section5.animation .words{
+
+    transition: all 1s 3s;
+    opacity: 1;
+    transform: rotateY(360deg) scale(1.2);
+}
+
+
+.section6 .street{
+
+    width: 100%;
+    height: 100%;
+    background: url(../images/06/bg.png) no-repeat -180px bottom;
+}
+
+
+.section6 .carBox{
+
+    width: 221px;
+    height: 122px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 83px;
+    left:560px;
+}
+
+.section6 .airBox{
+
+    width: 123px;
+    height: 85px;
+    position: absolute;
+    top:-380px;
+}
+
+
+.section6 .sofa{
+
+    width: 80px;
+    position: absolute;
+    left:20px;
+    top:-10px;
+}
+
+.section6 .box{
+    position: absolute;
+}
+
+.section6 .man{
+    position: absolute;
+    /* height: 140px; */
+    height: 0px;
+    right:0;
+    bottom: 20px;
+}
+
+
+.section6 .door{
+
+    position: absolute;
+    right:265px;
+    bottom: 0;
+    margin-bottom: 116px;
+    display: none;
+}
+
+
+.section6 .girl{
+
+    position: absolute;
+    right:275px;
+    bottom: 0;
+    margin-bottom: 116px;
+    height: 120px;
+    display: none;
+}
+
+
+/* 第七屏 */
+.section7{
+
+    background: url(../images/07/bg.png) no-repeat center bottom;
+}
+
+
+.section7 .star{
+
+    /* width: 105px; */
+    width: 0;
+    height: 17px;
+    background: url(../images/07/stars3.png);
+    position: absolute;
+
+    left:50%;
+    bottom: 0;
+    margin-left: -300px;
+    margin-bottom: 443px;
+}
+
+
+.section7.animation .star{
+
+    transition: all 1s steps(5);
+    width: 105px;
+}
+
+.section7 .good{
+
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    margin-left: -280px;
+    margin-bottom: 383px;
+    opacity: 0;
+}
+
+.section7.animation .good{
+
+    transition: all 1s 1s;
+    opacity: 1;
+}
+
+
+/* 第八屏 */
+.section8{
+    background: url(../images/08/bg.png) repeat;
+}
+
+
+.section8 .begin{
+
+    width: 389px;
+    height: 160px;
+    background: url(../images/08/begin.png);
+
+    position: absolute;
+    left: 50%;
+    margin-left: -194.5px;
+    top:20px;
+}
+
+
+.section8 .begin:hover{
+
+    background: url(../images/08/begin.gif);
+}
+
+
+.section8 .again{
+
+    position: absolute;
+    bottom:100px;
+    right:80px;
+}
+
+
+.section8 .hand{
+    position: absolute;
+    /* 告诉手不接受任何事件 */
+    pointer-events: none;
+}
